@@ -4,9 +4,15 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useSelector } from 'react-redux';
+import { selectedItems } from '../Store/productSlice'; 
 function Header() {
+
+    const { additems  } = useSelector(selectedItems);
+
   return (
     <div>
+       
     <Navbar expand="lg" className="bg-secondary p-3">
       <Container fluid>
       <Nav.Item>

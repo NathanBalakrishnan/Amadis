@@ -4,6 +4,7 @@ import Login from './login/Login';
 import Dashboard from './profile/Dashboard';
 import ViewItems from './profile/ViewItems';
 import Header from './header/Header';
+import AddToCart from './profile/AddToCart';
 // import PrivateRouter from './components/utils/PrivateRoutes'
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           {/* <Route path="/signin" element={<Signin/> }/> */}
           <Route path='/Dashboard' element={<Dashboard/>}/> 
           <Route path='/ViewItems' element={<ViewItems/>}/> 
+          <Route path='/AddToCart' element={<AddToCart/>}/> 
        </Routes>
     </div>
   );
